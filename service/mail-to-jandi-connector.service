@@ -1,0 +1,18 @@
+[Unit]
+Description=mail-to-jandi-connector
+After=syslog.target
+
+[Service]
+#User=mail-to-jandi-connector
+#Optional
+
+Environment=JAVA_OPTS=-Dconfig=/home/mail-to-jandi/config.yml
+# Environment=JAVA_OPTS=-Dconfig=YOUR_CONFIG_FILE_PATH
+
+ExecStart=/home/mail-to-jandi/mail-to-jandi-connector-1.0.jar
+#ExecStart=YOUR_JAR_FILE_PATH
+
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

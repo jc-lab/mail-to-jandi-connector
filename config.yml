@@ -1,0 +1,27 @@
+spring.mail:
+  host: 
+  port: 587
+  username: 
+  password: 
+# imap or imaps
+
+app.mail:
+  host: 
+  port: 993
+  username: 
+  password: 
+  protocol: imaps
+# imap or imaps
+
+app.jandi:
+  webhook.url: "https://wh.jandi.com/connect-api/webhook/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+javax.net.debug: all
+mail.imap.ssl.checkserveridentity: false
+mail.imap.ssl.trust: "domain.com"
+mail.imap.connectiontimeout: 3000
+mail.imaps.connectiontimeout: 3000
+mail.imap.timeout: 3000
+
+spring.mail.properties.mail.smtp.auth: true
+spring.mail.properties.mail.smtp.starttls.enable: true
